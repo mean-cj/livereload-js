@@ -667,6 +667,7 @@
   };
 
   pathFromUrl = function(url) {
+    if( ! url ) return "";
     var path;
     url = splitUrl(url).url;
     if (url.indexOf('file://') === 0) {
